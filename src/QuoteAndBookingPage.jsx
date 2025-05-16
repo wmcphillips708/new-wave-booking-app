@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from "react";
 import { Card, CardContent } from "../components/ui/card";
 import { Input } from "../components/ui/input";
@@ -14,7 +13,18 @@ import {
   SelectItem,
 } from "../components/ui/select";
 
-// Minimal component stub; replace with full JSX from project if needed
+// Minimal stub logic to ensure placeholder is present
 export default function QuoteAndBookingPage() {
-  return <div>Hello from Booking Page</div>;
+  return (
+    <div className="p-4">
+      <Card>
+        <CardContent>
+          <h2 className="text-xl font-bold mb-4">1 Minute Window Cleaning Quote</h2>
+          <Label>Enter Address</Label>
+          <Input placeholder="123 Main St" />
+          <Button className="mt-4">Calculate Quote</Button>
+        </CardContent>
+      </Card>
+    </div>
+  );
 }
